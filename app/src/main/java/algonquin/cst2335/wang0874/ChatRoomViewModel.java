@@ -1,0 +1,12 @@
+package algonquin.cst2335.wang0874;
+
+
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+
+import java.util.ArrayList;
+
+public class ChatRoomViewModel extends ViewModel {
+//    public MutableLiveData<ArrayList<ChatRoom.ChatMessage>> messages = new MutableLiveData<>();
+    public MutableLiveData<ArrayList<ChatMessage>> messages = new MutableLiveData<>();
+}
