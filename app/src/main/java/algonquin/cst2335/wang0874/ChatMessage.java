@@ -1,4 +1,5 @@
 package algonquin.cst2335.wang0874;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -16,6 +17,7 @@ public class ChatMessage {
     public int sendOrReceive;
 
     @PrimaryKey(autoGenerate=true)
+    @ColumnInfo(name="id")
     public int id;
 
     public ChatMessage(){ }
@@ -25,6 +27,7 @@ public class ChatMessage {
         this.timeSent = timeSent;
         this.sendOrReceive = sentOrReceive;
     }
+
 
     public String getMessage() {
         return message;
@@ -41,3 +44,4 @@ public class ChatMessage {
     public void setId(int id) { this.id = id; }
     public int getId() { return id; }
 }
+
