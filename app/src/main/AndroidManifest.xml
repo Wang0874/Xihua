@@ -12,9 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.XihuasAndroidLabs"
         tools:targetApi="31">
-        <activity
-            android:name=".ChatRoomViewModel"
-            android:exported="false" />
+
         <activity
             android:name=".ChatRoom"
             android:exported="true">
@@ -24,9 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"></activity>
+
     </application>
 
 </manifest>
